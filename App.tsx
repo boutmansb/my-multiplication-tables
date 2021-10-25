@@ -7,9 +7,16 @@ import ResultView from './Views/ResultView';
 
 type ViewState = "selection" | "exercise" | "results";
 
+interface Exercise {
+  root: number,
+  multiplier: number,
+  result: null|boolean
+}
+
 export default function App() {
   const [selectedTables] = React.useState([]);
   const [viewState, setViewState] = React.useState<ViewState>("selection");
+  const [totalResult, setTotalResult] = React.useState<Exercise[]>([]);
 
   function addNumberToSelectedTables(num) {
     if (selectedTables.indexOf(num) === -1) {
@@ -19,6 +26,11 @@ export default function App() {
 
   function removeNumberFromSelectedTables(num) {
     selectedTables.splice(selectedTables.indexOf(num), 1);
+  }
+
+  function saveFinalExercises(exercises) {
+    setTotalResult(exercises);
+    setViewState("results");
   }
 
   if(viewState === "selection") {
@@ -54,7 +66,7 @@ export default function App() {
   else if (viewState === "exercise") {
     return(
       <View style={styles.container}>
-        <ExerciseView selectedTables={selectedTables} />
+        <ExerciseView selectedTables={selectedTables} saveFinalExercises={saveFinalExercises} />
 
         <StatusBar style="auto" />
       </View>
@@ -63,7 +75,7 @@ export default function App() {
   else if (viewState === "results") {
     return(
       <View style={styles.container}>
-        <ResultView selectedTables={selectedTables} />
+        <ResultView result={totalResult} />
 
         <StatusBar style="auto" />
       </View>

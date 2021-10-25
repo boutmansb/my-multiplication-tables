@@ -53,6 +53,8 @@ export default function ExerciseView(props) {
             setLastResult(null);
             setMultiplier(tables[currentExercise + 1].multiplier);
             setRoot(tables[currentExercise + 1].root);
+        } else {
+            props.saveFinalExercises(tables);
         }
     }
 
