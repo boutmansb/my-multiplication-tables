@@ -3,10 +3,13 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import SelectTableButton from './Components/SelectTableButton';
 import ExerciseView from './Views/ExerciseView';
+import ResultView from './Views/ResultView';
+
+type ViewState = "selection" | "exercise" | "results";
 
 export default function App() {
   const [selectedTables] = React.useState([]);
-  const [viewState, setViewState] = React.useState("selection");
+  const [viewState, setViewState] = React.useState<ViewState>("selection");
 
   function addNumberToSelectedTables(num) {
     if (selectedTables.indexOf(num) === -1) {
@@ -39,7 +42,7 @@ export default function App() {
 
         <TouchableOpacity
             style={styles.button}
-            onPress={() => setViewState("running")}
+            onPress={() => setViewState("exercise")}
             >
               <Text style={styles.buttonText}>Invullen!</Text>
         </TouchableOpacity>
@@ -48,11 +51,19 @@ export default function App() {
       </View>
     );
   }
-  else {
+  else if (viewState === "exercise") {
     return(
       <View style={styles.container}>
-        {console.log(selectedTables)}
         <ExerciseView selectedTables={selectedTables} />
+
+        <StatusBar style="auto" />
+      </View>
+    );
+  }
+  else if (viewState === "results") {
+    return(
+      <View style={styles.container}>
+        <ResultView selectedTables={selectedTables} />
 
         <StatusBar style="auto" />
       </View>
