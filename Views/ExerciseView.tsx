@@ -6,9 +6,9 @@ import ExerciseTest from '../Components/ExerciseTest';
 
 export default function ExerciseView(props) {
     interface Exercise {
-        root: Number,
-        multiplier: Number,
-        result: null|Boolean
+        root: number,
+        multiplier: number,
+        result: null|boolean
     }
 
     const [tables, setTables] = React.useState<Exercise[]>(generateShuffledExercises());
@@ -57,7 +57,6 @@ export default function ExerciseView(props) {
     }
 
     function handleInputCheck(input) {
-        console.log('hallo');
         let oldTables = tables;
         let currentEx = oldTables[currentExercise];
         let test = currentEx.multiplier * currentEx.root;
