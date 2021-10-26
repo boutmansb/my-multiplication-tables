@@ -78,6 +78,13 @@ export default function ExerciseView(props) {
 
     return (
         <View>
+            <TouchableOpacity
+                style={styles.button}
+                onPress={() => props.handleReturnToStartScreen()}
+                >
+                <Text style={styles.buttonText}>Terug naar begin</Text>
+            </TouchableOpacity>
+
             <Text style={styles.instructions}>Hier komen dan de oefeningen!</Text>
             {renderExcerciseTest()}
         </View>
@@ -87,8 +94,18 @@ export default function ExerciseView(props) {
 
 const styles = StyleSheet.create({
     instructions: {
-      color: '#888',
-      fontSize: 18,
-      marginBottom: 15
-    }
+        color: '#888',
+        fontSize: 18,
+        marginBottom: 15
+    },
+    button: {
+        backgroundColor: 'blue',
+        padding: 20,
+        borderRadius: 5,
+        margin: 5
+    },
+    buttonText: {
+        fontSize: 20,
+        color: '#fff'
+    },
   });

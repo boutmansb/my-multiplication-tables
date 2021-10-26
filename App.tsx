@@ -10,11 +10,11 @@ type ViewState = "selection" | "exercise" | "results";
 interface Exercise {
   root: number,
   multiplier: number,
-  result: null|boolean
+  result: boolean
 }
 
 export default function App() {
-  const [selectedTables] = React.useState([]);
+  const [selectedTables, setSelectedTables] = React.useState([]);
   const [viewState, setViewState] = React.useState<ViewState>("selection");
   const [totalResult, setTotalResult] = React.useState<Exercise[]>([]);
 
@@ -31,6 +31,11 @@ export default function App() {
   function saveFinalExercises(exercises) {
     setTotalResult(exercises);
     setViewState("results");
+  }
+
+  function returnToStartScreen() {
+    setSelectedTables([]);
+    setViewState("selection");
   }
 
   if(viewState === "selection") {
@@ -66,7 +71,7 @@ export default function App() {
   else if (viewState === "exercise") {
     return(
       <View style={styles.container}>
-        <ExerciseView selectedTables={selectedTables} saveFinalExercises={saveFinalExercises} />
+        <ExerciseView selectedTables={selectedTables} saveFinalExercises={saveFinalExercises} handleReturnToStartScreen={returnToStartScreen} />
 
         <StatusBar style="auto" />
       </View>
@@ -75,7 +80,7 @@ export default function App() {
   else if (viewState === "results") {
     return(
       <View style={styles.container}>
-        <ResultView result={totalResult} />
+        <ResultView result={totalResult} handleReturnToStartScreen={returnToStartScreen} />
 
         <StatusBar style="auto" />
       </View>

@@ -18,6 +18,13 @@ export default function ResultView(props) {
         <View>
             <Text style={styles.instructions}>Hier komen dan de resultaten van de ingevulde oefeningen!</Text>
             <Text style={styles.instructions}>{renderFinalResult()}</Text>
+
+            <TouchableOpacity
+                style={styles.button}
+                onPress={() => props.handleReturnToStartScreen()}
+                >
+                <Text style={styles.buttonText}>Terug naar begin!</Text>
+            </TouchableOpacity>
         </View>
 
     );
@@ -28,5 +35,15 @@ const styles = StyleSheet.create({
       color: '#888',
       fontSize: 18,
       marginBottom: 15
-    }
+    },
+    button: {
+        backgroundColor: 'blue',
+        padding: 20,
+        borderRadius: 5,
+        margin: 5
+    },
+    buttonText: {
+        fontSize: 20,
+        color: '#fff'
+    },
   });
