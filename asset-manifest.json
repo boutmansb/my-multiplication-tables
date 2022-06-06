@@ -1,0 +1,22 @@
+{
+  "files": {
+    "app.js": "/my-multiplication-tables/static/js/app.0bd4931d.chunk.js",
+    "app.js.map": "/my-multiplication-tables/static/js/app.0bd4931d.chunk.js.map",
+    "runtime~app.js": "/my-multiplication-tables/static/js/runtime~app.0d1ca3ef.js",
+    "runtime~app.js.map": "/my-multiplication-tables/static/js/runtime~app.0d1ca3ef.js.map",
+    "static/js/2.6cd15f2b.chunk.js": "/my-multiplication-tables/static/js/2.6cd15f2b.chunk.js",
+    "static/js/2.6cd15f2b.chunk.js.map": "/my-multiplication-tables/static/js/2.6cd15f2b.chunk.js.map",
+    "favicon-16.png": "/my-multiplication-tables/favicon-16.png",
+    "favicon-32.png": "/my-multiplication-tables/favicon-32.png",
+    "favicon.ico": "/my-multiplication-tables/favicon.ico",
+    "index.html": "/my-multiplication-tables/index.html",
+    "manifest.json": "/my-multiplication-tables/manifest.json",
+    "serve.json": "/my-multiplication-tables/serve.json",
+    "static/js/2.6cd15f2b.chunk.js.LICENSE.txt": "/my-multiplication-tables/static/js/2.6cd15f2b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.0d1ca3ef.js",
+    "static/js/2.6cd15f2b.chunk.js",
+    "static/js/app.0bd4931d.chunk.js"
+  ]
+}
