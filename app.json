@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "my-multiplication-tables",
-    "slug": "my-multiplication-tables",
+    "name": "My Simple Multiplications",
+    "slug": "my-simple-multiplications",
     "version": "1.0.0",
+    "owner": "boutmansb",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
