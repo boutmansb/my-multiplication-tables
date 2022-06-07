@@ -78,14 +78,18 @@ export default function ExerciseView(props) {
 
     return (
         <View>
-            <TouchableOpacity
-                style={styles.button}
-                onPress={() => props.handleReturnToStartScreen()}
-                >
-                <Text style={styles.buttonText}>Terug naar begin</Text>
-            </TouchableOpacity>
 
-            <Text style={styles.instructions}>Hier komen dan de oefeningen!</Text>
+            <View style={styles.backContainer}>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => props.handleReturnToStartScreen()}
+                    >
+                    <Text style={styles.buttonText}>Terug naar begin</Text>
+                </TouchableOpacity>
+            </View>
+
+
+            <Text style={styles.instructions}>Los de oefening op en vul het resultaat in. Druk daarna op 'Klaar'!</Text>
             {renderExcerciseTest()}
         </View>
 
@@ -108,4 +112,10 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: '#fff'
     },
+    backContainer: {
+        flex: 1,
+        justifyContent: 'flex-end',
+        alignItems: 'flex-start',
+        marginBottom: 16
+    }
   });
