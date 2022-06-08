@@ -1,21 +1,21 @@
 {
   "files": {
-    "app.js": "/my-multiplication-tables/static/js/app.63ab0492.chunk.js",
-    "app.js.map": "/my-multiplication-tables/static/js/app.63ab0492.chunk.js.map",
-    "runtime~app.js": "/my-multiplication-tables/static/js/runtime~app.0d1ca3ef.js",
-    "runtime~app.js.map": "/my-multiplication-tables/static/js/runtime~app.0d1ca3ef.js.map",
-    "static/js/2.72a5f494.chunk.js": "/my-multiplication-tables/static/js/2.72a5f494.chunk.js",
-    "static/js/2.72a5f494.chunk.js.map": "/my-multiplication-tables/static/js/2.72a5f494.chunk.js.map",
-    "favicon-16.png": "/my-multiplication-tables/favicon-16.png",
-    "favicon-32.png": "/my-multiplication-tables/favicon-32.png",
-    "favicon.ico": "/my-multiplication-tables/favicon.ico",
-    "index.html": "/my-multiplication-tables/index.html",
-    "manifest.json": "/my-multiplication-tables/manifest.json",
-    "serve.json": "/my-multiplication-tables/serve.json",
-    "static/js/2.72a5f494.chunk.js.LICENSE.txt": "/my-multiplication-tables/static/js/2.72a5f494.chunk.js.LICENSE.txt"
+    "app.js": "tafels.benjaminboutmans.be/static/js/app.63ab0492.chunk.js",
+    "app.js.map": "tafels.benjaminboutmans.be/static/js/app.63ab0492.chunk.js.map",
+    "runtime~app.js": "tafels.benjaminboutmans.be/static/js/runtime~app.7eec46d9.js",
+    "runtime~app.js.map": "tafels.benjaminboutmans.be/static/js/runtime~app.7eec46d9.js.map",
+    "static/js/2.72a5f494.chunk.js": "tafels.benjaminboutmans.be/static/js/2.72a5f494.chunk.js",
+    "static/js/2.72a5f494.chunk.js.map": "tafels.benjaminboutmans.be/static/js/2.72a5f494.chunk.js.map",
+    "favicon-16.png": "tafels.benjaminboutmans.be/favicon-16.png",
+    "favicon-32.png": "tafels.benjaminboutmans.be/favicon-32.png",
+    "favicon.ico": "tafels.benjaminboutmans.be/favicon.ico",
+    "index.html": "tafels.benjaminboutmans.be/index.html",
+    "manifest.json": "tafels.benjaminboutmans.be/manifest.json",
+    "serve.json": "tafels.benjaminboutmans.be/serve.json",
+    "static/js/2.72a5f494.chunk.js.LICENSE.txt": "tafels.benjaminboutmans.be/static/js/2.72a5f494.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime~app.0d1ca3ef.js",
+    "static/js/runtime~app.7eec46d9.js",
     "static/js/2.72a5f494.chunk.js",
     "static/js/app.63ab0492.chunk.js"
   ]
