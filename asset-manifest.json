@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/my-multiplication-tables/static/js/app.d6f8e220.chunk.js",
-    "app.js.map": "/my-multiplication-tables/static/js/app.d6f8e220.chunk.js.map",
+    "app.js": "/my-multiplication-tables/static/js/app.63ab0492.chunk.js",
+    "app.js.map": "/my-multiplication-tables/static/js/app.63ab0492.chunk.js.map",
     "runtime~app.js": "/my-multiplication-tables/static/js/runtime~app.0d1ca3ef.js",
     "runtime~app.js.map": "/my-multiplication-tables/static/js/runtime~app.0d1ca3ef.js.map",
     "static/js/2.72a5f494.chunk.js": "/my-multiplication-tables/static/js/2.72a5f494.chunk.js",
@@ -17,6 +17,6 @@
   "entrypoints": [
     "static/js/runtime~app.0d1ca3ef.js",
     "static/js/2.72a5f494.chunk.js",
-    "static/js/app.d6f8e220.chunk.js"
+    "static/js/app.63ab0492.chunk.js"
   ]
 }
