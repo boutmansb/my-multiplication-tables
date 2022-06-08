@@ -1,17 +1,16 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, TextInput } from 'react-native';
 
 
 export default function ExerciseTest(props) {
     const [number, onChangeNumber] = React.useState('');
-    const resultInput = useRef<TextInput>(null);
 
     function renderNextButton() {
         if (props.result !== null) {
             return (
                 <TouchableOpacity
                     style={styles.button}
-                    onPress={() => {onChangeNumber(''); props.handleNextPress(); resultInput.current.focus()}}
+                    onPress={() => {onChangeNumber(''); props.handleNextPress();}}
                     >
                     <Text style={styles.buttonText}>Volgende oefening!</Text>
                 </TouchableOpacity>
@@ -52,7 +51,6 @@ export default function ExerciseTest(props) {
                     placeholder="vul hier de oplossing in"
                     keyboardType="numeric"
                     editable={props.result === null}
-                    ref={resultInput}
                 />
             </View>
 
