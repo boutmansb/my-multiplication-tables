@@ -15,9 +15,9 @@ export default function ResultView(props) {
     }
 
     return (
-        <View>
-            <Text style={styles.instructions}>Hier komen dan de resultaten van de ingevulde oefeningen!</Text>
-            <Text style={styles.instructions}>{renderFinalResult()}</Text>
+        <View style={styles.resultContainer}>
+            <Text style={styles.instructions}>Geweldig, je hebt alle oefeningen ingevuld!</Text>
+            <Text style={styles.resultInstructions}>{renderFinalResult()}</Text>
 
             <TouchableOpacity
                 style={styles.button}
@@ -31,11 +31,20 @@ export default function ResultView(props) {
 }
 
 const styles = StyleSheet.create({
+    resultContainer: {
+        alignItems: 'center'
+    },
     instructions: {
       color: '#888',
       fontSize: 18,
       marginBottom: 15
     },
+    resultInstructions: {
+        color: '#888',
+        fontSize: 27,
+        marginBottom: 15,
+        fontWeight: 'bold'
+      },
     button: {
         backgroundColor: 'blue',
         padding: 20,
