@@ -1,6 +1,6 @@
 {
   "main": "node_modules/expo/AppEntry.js",
-  "homepage": "http://boutmansb.github.io/my-multiplication-tables",
+  "homepage": "tafels.benjaminboutmans.be",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
