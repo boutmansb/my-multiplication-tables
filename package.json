@@ -1,6 +1,6 @@
 {
   "main": "node_modules/expo/AppEntry.js",
-  "homepage": "tafels.benjaminboutmans.be",
+  "homepage": "http://tafels.benjaminboutmans.be",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
