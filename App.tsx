@@ -42,7 +42,7 @@ export default function App() {
     return (
       <View style={styles.container}>
 
-        <Text style={styles.instructions}>Selecteer de tafels die je wilt oefenen.</Text>
+        <Text style={styles.instructions}>Druk op de tafels die je wilt oefenen. Je kan er zoveel aanduiden als je wilt.</Text>
 
         <View style={styles.tablesSelector}>
           <SelectTableButton value={1} selectedTables={selectedTables} onSelectTablePress={addNumberToSelectedTables} onDeselectTablePress={removeNumberFromSelectedTables} />
